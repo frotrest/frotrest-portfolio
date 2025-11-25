@@ -113,6 +113,17 @@ header .language-selector .form-check-input:hover {
   align-items: center;
   gap: 60px;
 }
+#about-me .about-content__podtitle {
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 3px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 #about-me .about-content__title {
   font-size: 45px;
   font-family: "Nunito", sans-serif;
