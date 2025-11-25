@@ -1,85 +1,84 @@
 header {
-    background-color: #333;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    .header-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .name {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .name__small {
-                color: rgb(194, 186, 186);
-                font-size: 20px;
-                color: white;
-                font-family: 'Montserrat', sans-serif;
-            }
-            .name__title {
-                color: white;
-                font-size: 34px;
-                font-family: 'Montserrat', sans-serif;
-                margin: 0px;
-                @media (max-width: 1200px) {
-                    & {
-                        font-size: 30px;
-                    }
-                    
-                }
-            }
+  background-color: #333;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .name {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .name__small {
+        color: rgb(194, 186, 186);
+        font-size: 20px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .name__title {
+        color: white;
+        font-size: 34px;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0px;
+        @media (max-width: 1200px) {
+          & {
+            font-size: 30px;
+          }
         }
-        .nav-bar {
-            display: none;
-            align-items: center;
-            gap: 30px;
-            @media (min-width: 768px) {
-                & {
-                    display: flex;
-                }
-            }
-            @media (min-width: 1200px) {
-                & {
-                    display: flex;
-                    gap: 40px;
-                }
-            }
-            &__item {
-                @media (max-width: 1200px) {
-                    & {
-                        font-size: 16px;
-                    }
-                }
-                color: white;
-                text-transform: uppercase;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 600;
-                font-size: 19px;
-                transition: color 0.3s ease;
-                padding-bottom: 10px;
-                letter-spacing: 1px;
-                &:hover {
-                    color: rgb(174, 175, 175);
-                }
-                }
-            }
-        }
-        .language-selector {
-            @media(min-width: 768px) {
-                & {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                }
-            }
-            display: none;
-            &__item {
-                width: 40px;
-            }
-            .form-check-input {
-                &:hover {
-                    cursor: pointer;
-                }
-            }
-        }
+      }
     }
+    .nav-bar {
+      display: none;
+      align-items: center;
+      gap: 30px;
+      @media (min-width: 768px) {
+        & {
+          display: flex;
+        }
+      }
+      @media (min-width: 1200px) {
+        & {
+          display: flex;
+          gap: 40px;
+        }
+      }
+      &__item {
+        @media (max-width: 1200px) {
+          & {
+            font-size: 16px;
+          }
+        }
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 19px;
+        transition: color 0.3s ease;
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+        &:hover {
+          color: rgb(174, 175, 175);
+        }
+      }
+    }
+  }
+  .language-selector {
+    @media (min-width: 768px) {
+      & {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    display: none;
+    &__item {
+      width: 40px;
+    }
+    .form-check-input {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

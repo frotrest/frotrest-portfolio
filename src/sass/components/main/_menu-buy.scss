@@ -1,122 +1,123 @@
 #menu-buy {
-    background-color: #333; 
-    padding-top: 125px;
-    padding-bottom: 125px;
-    .buyers-content {
+  background-color: #333;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  .buyers-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    &__title {
+      color: white;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      font-size: 45px;
+      letter-spacing: 5px;
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      .catalog {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 100px;
-        &__title {
-            color: white;
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            font-size: 45px;
-            letter-spacing: 5px;
-        }
-        .items {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            .catalog {
-                background-color: black;
-                padding: 60px 40px;
-                &:hover {
-                    cursor: pointer;
-                    &:hover .catalog__price {
-                        color: rgb(152, 168, 60);
-                    }
-                    &:hover .price-sheet__item {
-                        color: white;
-                        font-weight: 700;
-                    }
-                    &:hover .catalog__time {
-                        color: rgb(152, 168, 60);
-                    }
-                    &:hover .catalog__buy {
-                        background-color: rgb(152, 168, 60);
-                        color: black;
-                        font-weight: 900;
-                    }
-                    &:hover .catalog__buy:hover {
-                        color: white;
-                    }
-                }
-                &__price {
-                    font-size: 19.5px;
-                    font-family: 'Montserrat', sans-serif;
-                    text-transform: uppercase;
-                    color: #fff;
-                    transition: color 0.3s ease;
-                    margin-bottom: 20px;
-                }
-                &__time {
-                    font-family: 'Nunito', sans-serif;
-                    color: #fff;
-                    transition: color 0.3s ease;
-                }
-                &__item {
-                    font-size: 52px;
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    font-family: 'Montserrat', sans-serif;
-                    color: rgb(152, 168, 60);
-                    &::before {
-                        content: 'от';
-                        font-family: 'Nunito', sans-serif;
-                        font-size: 13px;
-                        text-transform: uppercase;
-                        color: #fff;
-                        transition: color 0.3s ease;
-                    }
-                    &::after {
-                        content: '₴';
-                        font-size: 26px;
-                        color: rgb(152, 168, 60);
-                        font-family: 'Nunito', sans-serif;
-                        font-weight: 900;
-                        transition: color 0.3s ease;
-                    }
-                }
-                .price-sheet {
-                    padding-left: 30px;
-                    margin-bottom: 30px;
-                    transition: color 0.3s ease;
-                    &__item {
-                        list-style: none;
-                        list-style-image: url(../Images/check.png);
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 12.2px;
-                        color: #fff;
-                        transition: color 0.3s ease;
-                    }
-                }
-                &__buy {
-                    padding: 10px 20px;
-                    font-size: 15px;
-                    background-color: #222222;
-                    border-radius: 4px;
-                    border: none;
-                    color: white;
-                    font-family: 'Nunito', sans-serif;
-                    font-weight: 900;
-                    text-transform: uppercase;
-                    transition: color 0.3s ease;
-                    letter-spacing: 2.5px;
-                    &:hover {
-                        cursor: pointer;
-                        color: white;
-                    }
-                }
+        align-items: flex-start;
+        background-color: black;
+        padding: 60px 40px 40px 40px;
+        gap: 15px;
+        width: 277px;
+        &:hover {
+          cursor: pointer;
+          .price-sheet__item {
+            color: rgb(255, 255, 255);
+            transition: color 0.3s ease;
+          }
+          .catalog__price,
+          .catalog__time {
+            color: rgb(152, 168, 60);
+            transition: color 0.3s ease;
+          }
+          .catalog__buy {
+            background-color: rgb(152, 168, 60);
+            color: black;
+            font-weight: 900;
+            transition: background-color 0.3s ease, color 0.3s ease,
+              font-weight 0.3s ease;
+
+            &:hover {
+              color: white;
             }
+          }
         }
+        &__price {
+          font-size: 19.5px;
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          color: #fff;
+          transition: color 0.3s ease;
+        }
+        &__time {
+          font-family: 'Nunito', sans-serif;
+          color: #fff;
+          transition: color 0.3s ease;
+        }
+        &__item {
+          font-size: 52px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-family: 'Montserrat', sans-serif;
+          color: rgb(152, 168, 60);
+          &::before {
+            content: 'от';
+            font-family: 'Nunito', sans-serif;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #fff;
+            transition: color 0.3s ease;
+          }
+          &::after {
+            content: '₴';
+            font-size: 26px;
+            color: rgb(152, 168, 60);
+            font-family: 'Nunito', sans-serif;
+            font-weight: 900;
+            transition: color 0.3s ease;
+          }
+        }
+        .price-sheet {
+          padding-left: 30px;
+          &__item {
+            list-style-image: url(../img/check.png);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12.2px;
+            color: #c7c1c1;
+            transition: color 0.3s ease, font-weight 0.3s ease;
+          }
+        }
+        &__buy {
+          padding: 10px 20px;
+          font-size: 15px;
+          background-color: #222222;
+          border-radius: 4px;
+          border: none;
+          color: white;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 900;
+          text-transform: uppercase;
+          transition: color 0.3s ease;
+          letter-spacing: 2.5px;
+          margin-top: 20px;
+          transition: all 0.3s ease;
+          &:hover {
+            cursor: pointer;
+            color: white;
+          }
+        }
+      }
     }
+  }
 }
-
-
-
-
