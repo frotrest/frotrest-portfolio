@@ -1,40 +1,40 @@
 @import './components/header';
 @import './components/footer';
 @import './components/main/main-styles';
+@import './burger';
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #3b3b3b;
-    border-radius: 0px;
+  background-color: #3b3b3b;
+  border-radius: 0px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #efefef;
+  background-color: #efefef;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
-    width: 320px;
-    padding: 0px 15px;
-    margin: 0px auto;
+  width: 320px;
+  padding: 0px 15px;
+  margin: 0px auto;
 }
 
 @media (min-width: 480px) {
@@ -55,114 +55,12 @@ body {
   }
 }
 
-.show {
-  max-width: 50%;
+[data-animate] {
+    opacity: 0;
+    transition: all 0.6s ease;
 }
 
-.offcanvas-backdrop {
-  background: none;
-}
-
-.btn-primary {
-  display: flex;
-  align-items: center;
-  background: none;
-  border: none;
-  order: 1;
-  &:hover {
-    background: none;
-  }
-  @media (min-width: 768px) {
-    & {
-      display: none;
-    }
-  }
-}
-
-.btn-check:checked+.btn, 
-.btn.active, 
-.btn.show, 
-.btn:first-child:active, 
-:not(.btn-check)+.btn:active {
-  background: none;
-}
-
-.btn-close:focus {
-  box-shadow: none;
-}
-
-.offcanvas-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;   
-  .name__title {
-    color: black;
-    font-size: 35px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
-    @media (min-width: 480px) {
-      & {
-        font-size: 50px;
-      }
-    }
-}
-    .name__small {
-      color: black;
-      font-size: 25px;
-      font-family: 'Montserrat', sans-serif;
-  }
-  }
-  .nav-bar--burger {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    gap: 30px;
-    &__item {
-      color: black;
-      text-transform: uppercase;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 600;
-      font-size: 23px;
-      transition: color 0.3s ease;
-      padding-bottom: 10px;
-      &:hover {
-          color: rgb(123, 85, 194);
-      }
-      @media (min-width: 480px) {
-        & {
-          font-size: 30px;
-        }
-      }
-}            
-  }
-  .language-selector {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 50px;
-    &__item {
-      width: 40px;
-    }
-}
-}
-
-.language-selector--bar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  &__item {
-    width: 40px;
-  }
-}
-
-.commentary__img {
-  width: 200px;
-  margin-bottom: 20px;
+[data-animate].visible {
+    opacity: 1;
+    transform: translateY(0);
 }

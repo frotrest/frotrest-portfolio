@@ -1,56 +1,54 @@
 #about-me {
-    padding-top: 125px;
-    padding-bottom: 125px;
-    .about-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 60px;
-        &__title {
-            font-size: 45px;
-            font-family: 'Nunito', sans-serif;
-            letter-spacing: 3px;
-            color: black;
-            margin: 0px;
-            text-align: center;
-            width: 480px;
-            @media (max-width: 480px) {
-                & {
-                    width: 320px;
-                    font-size: 32px;
-                }
-            }
+  padding-top: 125px;
+  padding-bottom: 125px;
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    &__title {
+      font-size: 45px;
+      font-family: 'Nunito', sans-serif;
+      letter-spacing: 3px;
+      color: black;
+      margin: 0px;
+      text-align: center;
+      width: 480px;
+      @media (max-width: 480px) {
+        & {
+          width: 320px;
+          font-size: 32px;
         }
-        .about-content__skills {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 40px;
-            align-items: center;
-            width: 409px;
-            @media (max-width: 480px) {
-                & {
-                    gap: 30px;
-                    width: 320px;
-                }
-            }
-            .about-content__skills--item {
-                .about-content__skills--img {
-                    width: 100px;
-                    @media (max-width: 480px) {
-                        & {
-                            width: 73px;
-                        }
-                        
-                    }
-                }
-            }
-        }
+      }
     }
-    
+    .about-content__skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 35px;
+      align-items: center;
+      width: 749px;
+      @media (max-width: 768px) {
+        & {
+          width: 480px;
+        }
+      }
+      @media (max-width: 480px) {
+        & {
+          gap: 30px;
+          width: 320px;
+        }
+      }
+      .about-content__skills--item {
+        .about-content__skills--img {
+          width: 100px;
+          @media (max-width: 480px) {
+            & {
+              width: 73px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-
-
-
-
-
