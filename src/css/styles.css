@@ -185,6 +185,11 @@ header .language-selector .form-check-input:hover {
   border-radius: 4px;
   background-color: white;
   border-width: 0px;
+  transition: transform 0.3s ease;
+}
+#projects .projects-content .cards .card:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
 }
 #projects .projects-content .cards .card .card__link--item {
   width: 320px;
@@ -256,8 +261,10 @@ header .language-selector .form-check-input:hover {
   padding: 60px 40px 40px 40px;
   gap: 15px;
   width: 277px;
+  transition: transform 0.3s ease;
 }
 #menu-buy .buyers-content .items .catalog:hover {
+  transform: translateY(-20px);
   cursor: pointer;
 }
 #menu-buy .buyers-content .items .catalog:hover .price-sheet__item {
