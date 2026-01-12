@@ -46,7 +46,9 @@
             background-color: rgb(152, 168, 60);
             color: black;
             font-weight: 900;
-            transition: background-color 0.3s ease, color 0.3s ease,
+            transition:
+              background-color 0.3s ease,
+              color 0.3s ease,
               font-weight 0.3s ease;
 
             &:hover {
@@ -97,7 +99,9 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 12.2px;
             color: #c7c1c1;
-            transition: color 0.3s ease, font-weight 0.3s ease;
+            transition:
+              color 0.3s ease,
+              font-weight 0.3s ease;
           }
         }
         &__buy {

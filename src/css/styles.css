@@ -18,12 +18,12 @@ header .header-content .name .name__small {
   color: rgb(194, 186, 186);
   font-size: 20px;
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 header .header-content .name .name__title {
   color: white;
   font-size: 34px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0px;
 }
 @media (max-width: 1200px) {
@@ -50,7 +50,7 @@ header .header-content .nav-bar {
 header .header-content .nav-bar__item {
   color: white;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 19px;
   transition: color 0.3s ease;
@@ -85,7 +85,7 @@ header .language-selector .form-check-input:hover {
 .site-footer {
   background-color: #111;
   padding: 40px 0px 40px 0px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 13px;
   color: #aaa;
   text-align: center;
@@ -115,7 +115,7 @@ header .language-selector .form-check-input:hover {
 }
 #about-me .about-content__podtitle {
   font-size: 25px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   letter-spacing: 3px;
   color: black;
   display: flex;
@@ -126,7 +126,7 @@ header .language-selector .form-check-input:hover {
 }
 #about-me .about-content__title {
   font-size: 45px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   letter-spacing: 3px;
   color: black;
   margin: 0px;
@@ -158,11 +158,19 @@ header .language-selector .form-check-input:hover {
     width: 320px;
   }
 }
-#about-me .about-content .about-content__skills .about-content__skills--item .about-content__skills--img {
+#about-me
+  .about-content
+  .about-content__skills
+  .about-content__skills--item
+  .about-content__skills--img {
   width: 100px;
 }
 @media (max-width: 480px) {
-  #about-me .about-content .about-content__skills .about-content__skills--item .about-content__skills--img {
+  #about-me
+    .about-content
+    .about-content__skills
+    .about-content__skills--item
+    .about-content__skills--img {
     width: 73px;
   }
 }
@@ -179,7 +187,7 @@ header .language-selector .form-check-input:hover {
   gap: 60px;
 }
 #projects .projects-content__title-projects {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 45px;
   color: white;
   letter-spacing: 5px;
@@ -219,13 +227,13 @@ header .language-selector .form-check-input:hover {
 }
 #projects .projects-content .cards .card .card-content__title {
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   margin: 0px;
 }
 #projects .projects-content .cards .card .card-content__description {
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 0px;
   font-weight: 600;
   text-align: center;
@@ -233,7 +241,7 @@ header .language-selector .form-check-input:hover {
 }
 #projects .projects-content .cards .card .card-content__item {
   font-size: 18px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   margin: 0px;
   font-weight: 600;
 }
@@ -253,7 +261,7 @@ header .language-selector .form-check-input:hover {
 #menu-buy .buyers-content__title {
   color: white;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-size: 45px;
   letter-spacing: 5px;
@@ -291,20 +299,23 @@ header .language-selector .form-check-input:hover {
   background-color: rgb(152, 168, 60);
   color: black;
   font-weight: 900;
-  transition: background-color 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    font-weight 0.3s ease;
 }
 #menu-buy .buyers-content .items .catalog:hover .catalog__buy:hover {
   color: white;
 }
 #menu-buy .buyers-content .items .catalog__price {
   font-size: 19.5px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   color: #fff;
   transition: color 0.3s ease;
 }
 #menu-buy .buyers-content .items .catalog__time {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #fff;
   transition: color 0.3s ease;
 }
@@ -313,22 +324,22 @@ header .language-selector .form-check-input:hover {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(152, 168, 60);
 }
 #menu-buy .buyers-content .items .catalog__item::before {
-  content: "от";
-  font-family: "Nunito", sans-serif;
+  content: 'от';
+  font-family: 'Nunito', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
   transition: color 0.3s ease;
 }
 #menu-buy .buyers-content .items .catalog__item::after {
-  content: "₴";
+  content: '₴';
   font-size: 26px;
   color: rgb(152, 168, 60);
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 900;
   transition: color 0.3s ease;
 }
@@ -337,10 +348,12 @@ header .language-selector .form-check-input:hover {
 }
 #menu-buy .buyers-content .items .catalog .price-sheet__item {
   list-style-image: url(../img/check.png);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12.2px;
   color: #c7c1c1;
-  transition: color 0.3s ease, font-weight 0.3s ease;
+  transition:
+    color 0.3s ease,
+    font-weight 0.3s ease;
 }
 #menu-buy .buyers-content .items .catalog__buy {
   padding: 10px 20px;
@@ -349,7 +362,7 @@ header .language-selector .form-check-input:hover {
   border-radius: 4px;
   border: none;
   color: white;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   transition: color 0.3s ease;
@@ -373,7 +386,7 @@ header .language-selector .form-check-input:hover {
   padding-bottom: 50px;
 }
 #certificates .certificates-content__title {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 52px;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -431,7 +444,7 @@ header .language-selector .form-check-input:hover {
 #certificates .certificates-content .certificates .certificate__title {
   font-size: 30px;
   font-weight: 900;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 900;
   margin-bottom: 0px;
   margin: 0px;
@@ -509,7 +522,7 @@ header .language-selector .form-check-input:hover {
 .offcanvas-header .name .name__title {
   color: black;
   font-size: 35px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0px;
 }
 @media (min-width: 480px) {
@@ -520,7 +533,7 @@ header .language-selector .form-check-input:hover {
 .offcanvas-header .name .name__small {
   color: black;
   font-size: 25px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .offcanvas-header .nav-bar--burger {
   display: flex;
@@ -533,7 +546,7 @@ header .language-selector .form-check-input:hover {
 .offcanvas-header .nav-bar--burger__item {
   color: black;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 25px;
   transition: color 0.3s ease;

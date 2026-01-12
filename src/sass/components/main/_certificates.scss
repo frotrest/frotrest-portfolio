@@ -1,91 +1,91 @@
 #certificates {
-    background-color: #2e2a46;
-    .certificates-content {
+  background-color: #2e2a46;
+  .certificates-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 125px;
+    padding-bottom: 50px;
+    &__title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 52px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin: 0px;
+      color: white;
+      @media (max-width: 480px) {
+        & {
+          font-size: 35px;
+        }
+      }
+    }
+    .certificates {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding-top: 50px;
+      @media (max-width: 480px) {
+        & {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .certificate {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding-top: 125px;
-        padding-bottom: 50px;
+        align-items: flex-start;
+        gap: 15px;
+        &__image {
+          border-radius: 20px;
+          height: 350px;
+          width: 700px;
+          @media (max-width: 480px) {
+            & {
+              width: 320px;
+              height: 320px;
+            }
+          }
+          @media (max-width: 768px) {
+            & {
+              width: 480px;
+              height: 240px;
+            }
+          }
+          @media (max-width: 1200px) {
+            & {
+              width: 350px;
+              height: 250px;
+            }
+          }
+        }
         &__title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 52px;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            margin: 0px;
-            color: white;
-            @media (max-width: 480px) {
-                & {
-                    font-size: 35px;
-                }
+          font-size: 30px;
+          font-weight: 900;
+          font-family: 'Montserrat Alternates', sans-serif;
+          font-weight: 900;
+          margin-bottom: 0px;
+          margin: 0px;
+          color: white;
+          @media (max-width: 480px) {
+            & {
+              font-size: 25px;
             }
+          }
+          @media (max-width: 768px) {
+            & {
+              font-size: 23px;
+              width: auto;
+            }
+          }
+          @media (max-width: 1200px) {
+            & {
+              font-size: 28px;
+            }
+          }
         }
-        .certificates {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            padding-top: 50px;
-            @media (max-width: 480px) {
-                & {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-            }
-            .certificate {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 15px;
-                &__image {
-                    border-radius: 20px;
-                    height: 350px;
-                    width: 700px;
-                    @media (max-width: 480px) {
-                        & {
-                            width: 320px;
-                            height: 320px;
-                        }
-                    }
-                    @media (max-width: 768px) {
-                        & {
-                            width: 480px;
-                            height: 240px;
-                        }
-                    }
-                    @media (max-width: 1200px) {
-                        & {
-                            width: 350px;
-                            height: 250px;
-                        }
-                    }
-                }
-                &__title {
-                  font-size: 30px;
-                  font-weight: 900;
-                  font-family: 'Montserrat Alternates', sans-serif;
-                  font-weight: 900;
-                  margin-bottom: 0px;
-                  margin: 0px;
-                  color: white;
-                  @media (max-width: 480px) {
-                    & {
-                        font-size: 25px;
-                    }
-                  }
-                  @media (max-width: 768px) {
-                    & {
-                        font-size: 23px;
-                        width: auto;
-                    }
-                  }
-                  @media (max-width: 1200px) {
-                    & {
-                        font-size: 28px;
-                    }
-                  }
-                }
-            }
-        }
+      }
     }
+  }
 }
