@@ -215,6 +215,7 @@ header .language-selector .form-check-input:hover {
   height: 294px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  object-fit: cover;
 }
 #projects .projects-content .cards .card .card-content {
   display: flex;
